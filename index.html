@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Twinkle Toes Christmas Lights | Chillicothe & Surrounding Areas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Twinkle Toes Christmas Lights — professional holiday light installation, take-down, and storage in Chillicothe and surrounding areas. Call or text 740-466-9600." />
+
+  <!-- Basic social preview (optional but nice) -->
+  <meta property="og:title" content="Twinkle Toes Christmas Lights" />
+  <meta property="og:description" content="Holiday light installation in Chillicothe and surrounding areas. Call/Text 740-466-9600." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root{
+      --bg: #0b1220;
+      --bg2:#123149;
+      --card:#ffffff;
+      --muted:#5b6472;
+      --line:#e8eaee;
+      --accent:#ffffff;
+      --shadow: 0 10px 30px rgba(0,0,0,.08);
+      --radius: 18px;
+      --max: 1020px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+      color:#101218;
+      line-height:1.55;
+      background:#fff;
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px;}
+    header{
+      background: linear-gradient(135deg,var(--bg),var(--bg2));
+      color:#fff;
+      padding:64px 0 40px;
+      position:relative;
+      overflow:hidden;
+    }
+    header:before{
+      content:"";
+      position:absolute;
+      inset:-40px -40px auto auto;
+      width:360px;height:360px;
+      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.18), rgba(255,255,255,0) 60%);
+      transform: rotate(10deg);
+      pointer-events:none;
+    }
+    .topline{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      padding:8px 12px;
+      border:1px solid rgba(255,255,255,.25);
+      border-radius:999px;
+      font-size:14px;
+      opacity:.95;
+      background: rgba(255,255,255,.06);
+    }
+    h1{
+      margin:14px 0 10px;
+      font-size:46px;
+      letter-spacing:-.5px;
+      line-height:1.08;
+    }
+    .sub{
+      max-width:780px;
+      font-size:18px;
+      opacity:.93;
+      margin:0 0 18px;
+    }
+    .cta{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin:18px 0 10px;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:12px 16px;
+      border-radius:14px;
+      font-weight:800;
+      text-decoration:none;
+      border:1px solid rgba(255,255,255,.25);
+      transition:transform .05s ease, opacity .15s ease;
+      user-select:none;
+    }
+    .btn:active{transform:translateY(1px)}
+    .btn.primary{
+      background:#fff;
+      color:#0b1220;
+      border-color:#fff;
+    }
+    .btn.ghost{
+      background:transparent;
+      color:#fff;
+    }
+    .meta{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      font-size:14px;
+      opacity:.95;
+      margin-top:10px;
+    }
+    .meta span{
+      display:inline-flex;
+      gap:8px;
+      align-items:center;
+      padding:7px 10px;
+      border-radius:999px;
+      background: rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.18);
+    }
+
+    main{padding:34px 0 60px;}
+    .grid{
+      display:grid;
+      gap:18px;
+      grid-template-columns: repeat(12, 1fr);
+    }
+    .card{
+      grid-column: span 12;
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:18px;
+      box-shadow: var(--shadow);
+    }
+    .card h2{margin:0 0 10px; font-size:22px;}
+    .muted{color:var(--muted)}
+    ul{margin:0; padding-left:18px;}
+    li{margin:6px 0}
+    .two{grid-column: span 12;}
+    .pillrow{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;}
+    .pill{
+      font-size:13px;
+      padding:7px 10px;
+      border-radius:999px;
+      background:#f5f7ff;
+      border:1px solid #e1e7ff;
+    }
+    .quoteBox{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    .quoteBtns{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:6px;
+    }
+    .btn.dark{
+      background:#0b1220;
+      color:#fff;
+      border-color:#0b1220;
+    }
+    .btn.light{
+      background:#fff;
+      color:#0b1220;
+      border-color:#e8eaee;
+    }
+    .photos{
+      display:grid;
+      gap:10px;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top:10px;
+    }
+    .ph{
+      border-radius:14px;
+      border:1px dashed #d8dbe2;
+      background:#fafbfc;
+      aspect-ratio: 4/3;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#8a93a3;
+      font-weight:700;
+      font-size:14px;
+    }
+    .fineprint{
+      font-size:13px;
+      color:#6b7280;
+      margin-top:10px;
+    }
+    footer{
+      border-top:1px solid #eee;
+      background:#fafafa;
+      padding:22px 0;
+      color:#666;
+      font-size:14px;
+      text-align:center;
+    }
+    @media (min-width: 860px){
+      h1{font-size:56px}
+      .two{grid-column: span 6;}
+      .card{padding:20px}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="topline">🎄 Chillicothe and surrounding areas • Call/Text: <strong>(740) 466-9600</strong></div>
+
+    <h1>Twinkle Toes Christmas Lights</h1>
+
+    <p class="sub">
+      We make your home look like Christmas showed up with a plan. Clean lines, safe installs,
+      and a finished look that makes the neighbors whisper, “Okay… who did that?”
+      <br><span class="muted" style="color:rgba(255,255,255,.85);">Yes, our Head Elf is in charge. 🧝</span>
+    </p>
+
+    <div class="cta">
+      <a class="btn primary" href="tel:+17404669600">Call for a Quote</a>
+      <a class="btn ghost" href="sms:+17404669600">Text for a Quote</a>
+      <a class="btn ghost" href="#quote">Request a Quote</a>
+    </div>
+
+    <div class="meta">
+      <span>✨ Install</span>
+      <span>🧤 Take-Down</span>
+      <span>📦 Storage</span>
+      <span>🏠 Rooflines • Trees • Wreaths</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap grid">
+    <section class="card two">
+      <h2>What we do</h2>
+      <ul>
+        <li>Holiday light installation (rooflines, peaks, trees, shrubs)</li>
+        <li>Clean cable management (no spaghetti-cord drama)</li>
+        <li>Timers + tidy layout</li>
+        <li>Seasonal take-down when the party’s over</li>
+        <li>Optional storage so next year is effortless</li>
+      </ul>
+      <div class="pillrow">
+        <span class="pill">Residential</span>
+        <span class="pill">Small business</span>
+        <span class="pill">Simple packages available</span>
+      </div>
+    </section>
+
+    <section class="card two">
+      <h2>Why us</h2>
+      <ul>
+        <li><strong>Safety first</strong> — no sketchy ladder nonsense</li>
+        <li><strong>Professional finish</strong> — straight runs, clean corners</li>
+        <li><strong>Fast communication</strong> — we don’t ghost</li>
+        <li><strong>Locally owned</strong> — we care because it’s our community</li>
+      </ul>
+      <p class="fineprint">If you want “basic roofline” pricing fast, text us your address and a quick photo. We’ll move.</p>
+    </section>
+
+    <section class="card" id="quote">
+      <h2>Request a quote</h2>
+      <div class="quoteBox">
+        <p class="muted" style="margin:0;">
+          Want a quote without playing phone tag? Use the form. It goes straight to <strong>twinkletoeslights@gmail.com</strong>.
+        </p>
+
+        <!-- Replace with your real Google Form link -->
+        <div class="quoteBtns">
+          <a class="btn dark" href="PASTE_YOUR_GOOGLE_FORM_LINK_HERE" target="_blank" rel="noopener">Request a Quote</a>
+          <a class="btn light" href="tel:+17404669600">Call (740) 466-9600</a>
+          <a class="btn light" href="sms:+17404669600">Text (740) 466-9600</a>
+        </div>
+
+        <p class="fineprint">
+          Pro tip: In the form, upload a photo of the front of your home and tell us what you want lit (roofline only vs roofline + trees). Faster quote.
+        </p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Photos</h2>
+      <p class="muted" style="margin-top:0;">Drop your best installs here later. For now, placeholders so the layout is ready.</p>
+      <div class="photos">
+        <div class="ph">Add Photo 1</div>
+        <div class="ph">Add Photo 2</div>
+        <div class="ph">Add Photo 3</div>
+      </div>
+      <p class="fineprint">When you’re ready, I’ll show you the easiest way to add photos without breaking anything.</p>
+    </section>
+
+    <section class="card two">
+      <h2>Service area</h2>
+      <p class="muted" style="margin-top:0;">
+        Chillicothe and surrounding areas. If you’re nearby, ask — we’ll tell you straight.
+      </p>
+      <div class="pillrow">
+        <span class="pill">Chillicothe</span>
+        <span class="pill">Ross County</span>
+        <span class="pill">Nearby towns</span>
+      </div>
+    </section>
+
+    <section class="card two">
+      <h2>FAQ</h2>
+      <p><strong>Do you provide the lights?</strong><br><span class="muted">We can install your lights, or we can discuss providing them depending on the package.</span></p>
+      <p><strong>How do we get started?</strong><br><span class="muted">Call/text us, or hit the quote form. We’ll confirm details and schedule you.</span></p>
+      <p><strong>Are you insured?</strong><br><span class="muted">If you are, tell me and I’ll add it here (it boosts trust).</span></p>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><strong>Twinkle Toes Christmas Lights</strong> • Chillicothe and surrounding areas</div>
+    <div>Call/Text: <a href="tel:+17404669600">(740) 466-9600</a> • Email: <a href="mailto:twinkletoeslights@gmail.com">twinkletoeslights@gmail.com</a></div>
+    <div class="fineprint" style="margin-top:8px;">© <span id="y"></span> Twinkle Toes Christmas Lights</div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
